@@ -562,13 +562,13 @@ class mainloop {
             $result .= "<b>Last update:</b> " . convertGjsonDateToString($v['update']) . "\n";
             $result .= (isset($v['profession']) && $v['profession'] != "") ? "<b>Profession:</b> " . $v['profession'] . "\n" : "";
             $result .= (isset($v['Name']) && $v['Name'] != "") ? "<b>Name:</b> " . $v['Name'] . "\n" : "";
-            $result .= (isset($v['Email']) && $v['Email'] != "") ? "<b>Email:</b>  " . $v['Email'] . "\n" : "";
-            $result .= (isset($v['Phone']) && $v['Phone'] != "") ? "<b>Phone:</b> " . $v['Phone'] . "\n" : "";
-            $result .= (isset($v['Mobile1']) && $v['Mobile1'] != "") ? "<b>Mobile1:</b> " . $v['Mobile1'] . "\n" : "";
-            $result .= (isset($v['Mobile2']) && $v['Mobile2'] != "") ? "<b>Mobile2:</b> " . $v['Mobile2'] . "\n" : "";
+            $result .= (isset($v['Email']) && $v['Email'] != "") ? "&#128234;: " . $v['Email'] . "\n" : "";
+            $result .= (isset($v['Phone']) && $v['Phone'] != "") ? "&#128222;: " . $v['Phone'] . "\n" : "";
+            $result .= (isset($v['Mobile1']) && $v['Mobile1'] != "") ? "&#128244;: " . $v['Mobile1'] . "\n" : "";
+            $result .= (isset($v['Mobile2']) && $v['Mobile2'] != "") ? "&#128244;: " . $v['Mobile2'] . "\n" : "";
             $result .= (isset($v['Address']) && $v['Address'] != "") ? "<b>Address:</b> " . $v['Address'] . "\n" : "";
             $result .= (isset($v['Description']) && $v['Description'] != "") ? "<b>Description:</b> " . $v['Description'] . "\n" : "";
-            $result .= (isset($v['web']) && $v['web'] != "") ? "<b>URL:</b> " . $v['web'] . "\n" : "";
+            $result .= (isset($v['web']) && $v['web'] != "") ? "&#128187;: " . $v['web'] . "\n" : "";
             $result .= ($elements[$count]['distance'] != -1) ? "<b>Distance:</b> " . number_format($elements[$count]['distance'], 2, '.', '') . " km \n" : "";
             $result .= (isset($v['Address']) || (isset($v['lat']) && isset($v['lng']))) ? "<b>GetPosition:</b> /pos_" . $v['ID'] . "\n" : "";
             $result .= "_____________\n";
